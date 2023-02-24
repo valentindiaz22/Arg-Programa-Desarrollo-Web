@@ -2,11 +2,11 @@ var auto = "Corolla";
 console.log(auto);
 console.log(typeof(auto));
 
-var auto = 308
+var auto = 308;
 console.log(auto);
 console.log(typeof(auto));
 
-var auto = "C4"
+var auto = "C4";
 console.log(auto);
 console.log(typeof(auto));
 
