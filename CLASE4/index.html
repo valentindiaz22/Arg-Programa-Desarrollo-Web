@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase4 ARG Programa</title>
+</head>
+<body>
+
+    <h1>
+        Para ver los outputs de los ejercicios 1 al 8, ver la consola.
+    </h1>
+    <br>
+    <section id="activadorEj8">
+        <button onclick="activar8()">Activar Ej 8
+        </button>
+    </section>
+    <br>
+    <section id="activadorEj8">
+        <button onclick="activar8Bis()">Activar Ej 8 PARTE 2
+        </button>
+    </section>
+    <br>
+
+    <section id="convertidorPeso" style="border-style:dashed;">
+        <h2>
+            EJ 9
+            <br>
+            Ingrese la cantidad de Dolares para pasar a Pesos
+        </h2>
+        <input type="number" id="dolar" min="0">
+        <button id="btn" onclick="convertirPeso()">Convertir a peso
+        </button>
+        <h2 id ="resultadoPeso">
+            0 Dolares son: 0 Pesos
+        </h2>
+    </section>
+
+    <h2>
+        Precio Dolar = 300 ARS
+    </h2>
+
+    <section id="convertidorDolar" style="border-style: double;">
+        <h2>
+            EJ 10
+            <br>
+            Ingrese la cantidad de Pesos para pasar a Dolares
+        </h2>
+        <input type ="number" id ="pesos" min="0">
+        <button id="btn" onclick="convertirDolar()">Convertir a dolar
+        </button>
+        <h2 id="resultadoDolar">
+            0 Pesos son: 0 Dolares
+        </h2>
+    </section>
+
+    <br>
+
+    <section id ="convertidorFahrenheit" style="border-style: dotted;">
+        <h2>
+            EJ 11
+            <br>
+            Ingrese los grados Celsius que quiere transformar a Fahrenheit
+            <br>
+            <input type ="number" id ="celsius">
+            <button id="btn" onclick="convertirFahrenheit()">Convertir a Fahrenheit
+            </button>
+            <h2 id="resultadoFahrenheit">
+                0º Celsius son: 32º Fahrenheit
+            </h2>
+        </h2>
+    </section>
+
+    <br>
+
+    <section id="FormularioCaja" style="border-style: groove;">
+        <h2>
+            EJ 12
+        </h2>
+        <form>
+            Nombre del cliente:
+            <br>
+            <input type="text" id="nombreCliente">
+            <br>
+            Material de la caja: 
+            <select id="tipoCaja">
+                <option value="Madera">Madera</option>
+                <option value="Papel">Papel</option>
+            </select>
+            <br>
+            <input type="radio" name="caja" checked value="diminutas">Diminuta
+            <br>
+            <input type="radio" name="caja" value="medianas">Mediana
+            <br>
+            <input type="radio" name="caja" value="grandes">Grande
+            <br>
+            Comentarios:
+            <br>
+            <textarea id="comentario"></textarea>
+            <br>
+            <button type="button" onclick="enviarCaja()">Enviar
+            </button>
+            <input type="text" id="resultadoCaja" value="" size="80" readonly>
+
+        </form>
+    </section>
+
+    <br>
+
+    <section id="numSecreto" style="border-style: ridge;">
+        <h2>
+            EJ 13
+        </h2>
+        <p>
+            Te presento un juego, debes adivinar un número secreto que está entre el 0 y el 5.
+        </p>
+        <h4 id="contador" style="color: green;">
+            Tenes 3 intento/s
+        </h4>
+        Ingrese el número:
+        <input id="numSecr" type="number" max="5" min="0">
+        <input id="cuadroTexto" value="Resultado" type="text" readonly size="5">
+        <br>
+        <button id="boton" type="button" onclick="adivinarNumero()">Enviar Numero</button>
+    </section>
+   
+    <br>
+
+    <section id="ej14" style="border-style:groove">
+        <h2>
+            EJ 14
+        </h2>
+        Ingrese el nombre de personas.
+        <br>
+        <input type="text" id="ejFinal">
+        <br>
+        <button id="btn" type="button" onclick="listaPersonas()">Enviar Nombre</button>
+        <br>
+        <br>
+        Nombres de personas:
+        <ul id="ul">
+        </ul>
+    </section>
+
+    <script type="text/javascript" src="Clase4 ARG Programa.js">
+    </script>
+    
+</body>
+</html>
